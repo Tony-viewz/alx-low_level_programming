@@ -1,0 +1,3 @@
+#!/bin/bsash
+gcc -c $CFILE
+
