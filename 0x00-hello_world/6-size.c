@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
  * main - A program that prints the size of various computer types
- * Return 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
-printf("Size of a char: %d byte(s)", sizeof(char));
-printf("Size of an int: %d byte(S)", sizeof(int));
-printf("Size of a long int: %d byte(S)", sizeof(long int));
-printf("Size of a long long int: %d byte(s)", sizeof(long long int));
-printf("Size of a float: %d byte(s)", sizeof(float));
+printf("Size of a char: %lu byte(s)\n", sizeof(char));
+printf("Size of an int: %lu byte(S)\n", sizeof(int));
+printf("Size of a long int: %lu byte(S)\n", sizeof(long int));
+printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
+printf("Size of a float: %lu byte(s)\n", sizeof(float));
 return (0);
 }
