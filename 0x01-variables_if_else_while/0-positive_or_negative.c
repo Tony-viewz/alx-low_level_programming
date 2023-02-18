@@ -4,7 +4,7 @@
 
 /**
  * main -  main function is to generate a random number
- * return always 0 (success)
+ * Return: 0 (success)
  */
 
 int main(void)
@@ -26,5 +26,5 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	return (0);
+Return: (0);
 }
