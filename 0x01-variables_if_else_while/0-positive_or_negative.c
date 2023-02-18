@@ -4,7 +4,7 @@
 
 /**
  * main -  main function is to generate a random number
- * Retur: 0 (success)
+ * Return: 0 (success)
  */
 
 int main(void)
