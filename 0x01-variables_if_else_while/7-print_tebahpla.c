@@ -3,7 +3,7 @@
  * main - print alphabets in reverse
  * Return: Always 0
  */
-int mian(void)
+int main(void)
 {
 	int n = 122;
 
