@@ -15,7 +15,7 @@ int main(void)
 
 	while (i < 10)
 	{
-		putcher(i);
+		putchar(i);
 	}
 
 	printf("infinite loop avoided! \\0/\n");
