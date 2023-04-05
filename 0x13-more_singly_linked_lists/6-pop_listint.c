@@ -4,7 +4,7 @@
 /**
  * pop_listint - deletes the head node
  *
- * @head: a double pointer 
+ * @head: a double pointer
  *
  * Return: empty
  */
