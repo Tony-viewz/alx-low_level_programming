@@ -6,7 +6,7 @@ void checkIOStat(int status, int fileDescriptor, char *fileName, char mode);
 /**
  * main - copies the content of one file to another
  * @argc: argument count
- * @argv: arguments passed, should contain source file and destination file
+ * @argv: argument vector
  * Return: 0 on success, non-zero value otherwise
  */
 int main(int argc, char *argv[])
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	}
 
 	sourceFile = open(argv[1], O_RDONLY);
-	checkIOStat(sourceFile, -1, argv[1], 'O');
+	checkIOStat(sourceFile, -1, argv[1], '0');
 
 	destinationFile = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC,
 			filePermission);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	{
 		numberOfBytesRead = read(sourceFile, buffer, sizeof(buffer));
 		if (numberOfBytesRead == -1)
-			checkIOStat(-1, -1, argv[1], 'O');
+			checkIOStat(-1, -1, argv[1], '0');
 
 		numberOfBytesWritten = write(destinationFile, buffer,
 				numberOfBytesRead);
