@@ -47,6 +47,8 @@ int main(int argc, char *argv[])
 	closeDestination = close(destinationFile);
 	checkIOStat(closeDestination, destinationFile, NULL, 'C');
 
+	chmod(argv[2], 0664);                           
+
 	return (0);
 }
 
