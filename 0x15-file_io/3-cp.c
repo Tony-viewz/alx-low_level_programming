@@ -68,12 +68,14 @@ void checkIOStat(int status, int fd, char *fileName, char mode)
 	}
 	else if (mode == 'H' && status == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", fileName);
+		dprintf(STDERR_FILENO,
+				"Error: Can't read from file %s\n", fileName);
 		exit(98);
 	}
 	else if (mode == 'M' && status == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", fileName);
+		dprintf(STDERR_FILENO,
+				"Error: Can't write to file %s\n", fileName); 
 		exit(99);
 	}
 }
