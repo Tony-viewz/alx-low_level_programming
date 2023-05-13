@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 	closeDestination = close(destinationFile);
 	checkIOStat(closeDestination, destinationFile, NULL, 'C');
 
-	chmod(argv[2], 0664);                           
+	chmod(argv[2], 0664);
 
 	return (0);
 }
@@ -76,8 +76,7 @@ void checkIOStat(int status, int fd, char *fileName, char mode)
 	}
 	else if (mode == 'M' && status == -1)
 	{
-		dprintf(STDERR_FILENO,
-				"Error: Can't write to file %s\n", fileName); 
+		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", fileName);
 		exit(99);
 	}
 }
